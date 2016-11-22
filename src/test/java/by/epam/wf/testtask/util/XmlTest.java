@@ -37,7 +37,7 @@ public class XmlTest {
   @Test
   @Ignore
   public void productWithMaxPriceTest() throws ParserConfigurationException, SAXException, XPathExpressionException, IOException {
-    String xmlQuery = "math:max(math:max(//product/self::product/@price) div math:min(//self::product/@quantity))";
+    String xmlQuery = "math:max(math:max(//product/self::product/number(translate(@price, '', ''))) div math:min(//self::product/number(translate(@quantity, ' ', ''))))";
     List expected = Arrays.asList("18000");
     List actual = new ArrayList();
     NodeList nl = new XmlUtil().getFromXmlFileByQuery(filePath, xmlQuery);

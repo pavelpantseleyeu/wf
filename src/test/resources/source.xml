@@ -1,0 +1,14 @@
+<warehouse>
+    <food>
+        <product price="20" quantity="100">apple</product>
+        <product price="17" quantity="3000">beef</product>
+        <product price="1" quantity="2300">milk</product>
+    </food>
+    <vehicles>
+        <product price="850" quantity="7000000">TATA</product>
+        <product price="1000" quantity="5000000">TUK-TUK</product>
+        <product price="18000" quantity="730">MACHINDRA</product>
+    </vehicles>
+    <product price="18000" quantity="1">Elephant</product>
+    <product price="1200" quantity="3">Laptop</product>
+</warehouse>
